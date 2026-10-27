@@ -1,0 +1,9 @@
+{
+  "uuid": "clipboard-history-win10@leon",
+  "name": "Transfer History",
+  "description": "Histórico da área de transferência com o visual do Win+V do Windows 10. Super+V abre o painel; clique num item para colar.",
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.clipboard-history-win10",
+  "url": "https://github.com/leon-lourenco/transfer-history",
+  "version-name": "1.0.0"
+}

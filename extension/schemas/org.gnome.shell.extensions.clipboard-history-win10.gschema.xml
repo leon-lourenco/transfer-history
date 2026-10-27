@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.clipboard-history-win10"
+          path="/org/gnome/shell/extensions/clipboard-history-win10/">
+    <key name="toggle-history" type="as">
+      <default><![CDATA[['<Super>v']]]></default>
+      <summary>Atalho que abre o histórico</summary>
+    </key>
+    <key name="max-items" type="i">
+      <range min="5" max="200"/>
+      <default>25</default>
+      <summary>Quantidade máxima de itens não fixados</summary>
+      <description>O Windows 10 guarda 25. Itens fixados não contam.</description>
+    </key>
+    <key name="max-image-bytes" type="i">
+      <default>8388608</default>
+      <summary>Tamanho máximo de uma imagem guardada (bytes)</summary>
+    </key>
+    <key name="paste-on-select" type="b">
+      <default>true</default>
+      <summary>Colar ao escolher um item</summary>
+      <description>Se falso, só copia o item para a área de transferência.</description>
+    </key>
+    <key name="saved-message-tray-binding" type="as">
+      <default>[]</default>
+      <summary>Uso interno: atalho original da bandeja de notificações</summary>
+      <description>Guardado no enable para ser restaurado no disable (ADR-0002).</description>
+    </key>
+  </schema>
+</schemalist>

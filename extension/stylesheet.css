@@ -1,0 +1,151 @@
+/* Visual do Win+V do Windows 10, tema escuro. Medidas e cores documentadas em docs/visual.md. */
+
+.th-panel {
+    width: 360px;
+    height: 460px;
+    background-color: rgba(43, 43, 43, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+    font-family: "Segoe UI", "Selawik", "Cantarell", sans-serif;
+    color: #ffffff;
+}
+
+.th-header {
+    padding: 14px 16px 10px 16px;
+}
+
+.th-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.th-link {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.86);
+    padding: 4px 8px;
+    border-radius: 0;
+    border: 2px solid transparent;
+    background: none;
+}
+
+.th-link:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.th-link:active {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.th-link:focus {
+    border-color: #ffffff;
+}
+
+.th-scroll {
+    padding: 0 0 8px 0;
+}
+
+.th-list {
+    padding: 0 8px;
+    spacing: 4px;
+}
+
+/* Cartão: retângulo reto, sem cantos arredondados, como no Windows 10. */
+.th-item {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 2px solid transparent;
+    border-radius: 0;
+    /* Sem min-height: no St ele substitui a altura mínima calculada, e o ScrollView
+       aloca pelos mínimos, espremendo os cartões em vez de rolar. */
+}
+
+.th-item:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.th-item:focus {
+    border-color: #ffffff;
+}
+
+.th-item-content {
+    padding: 12px 4px 12px 12px;
+    border-radius: 0;
+    background: none;
+    border: none;
+}
+
+.th-item-content:active {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.th-item-text {
+    font-size: 14px;
+    line-height: 1.35;
+    color: #ffffff;
+}
+
+.th-item-image {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.th-item-side {
+    padding: 4px;
+    spacing: 2px;
+}
+
+/* Botões de ícone do canto do cartão ("⋯", Excluir, Fixar, Limpar tudo). */
+.th-icon-button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 0;
+    border: 2px solid transparent;
+    background: none;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.th-icon-button:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.th-icon-button:active {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.th-icon-button:focus {
+    border-color: #ffffff;
+}
+
+.th-icon {
+    icon-size: 16px;
+}
+
+.th-pin-badge {
+    color: rgba(255, 255, 255, 0.70);
+    margin-top: 4px;
+}
+
+/* Menu do "⋯": coluna de ícones sobre um fundo um tom acima, como o flyout do Windows. */
+.th-menu {
+    background-color: rgba(70, 70, 70, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 2px;
+}
+
+.th-empty {
+    padding: 24px 16px;
+    spacing: 8px;
+}
+
+.th-empty-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.th-empty-body {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.70);
+}

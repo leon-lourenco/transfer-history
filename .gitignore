@@ -1,0 +1,4 @@
+extension/schemas/gschemas.compiled
+*.zip
+node_modules/
+tests/e2e/.out/
